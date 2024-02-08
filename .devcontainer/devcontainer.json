@@ -1,0 +1,23 @@
+{
+  "name": "EggLedger",
+  "build": { 
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "yarn install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "ms-vscode-remote.remote-containers",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "Vue.volar",
+        "peterj.proto",
+        "vunguyentuan.vscode-postcss",
+        "leizongmin.node-module-intellisense"
+      ]
+    }
+  }
+}
