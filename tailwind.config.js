@@ -1,7 +1,12 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  content: ['./www/*.html'],
+  content: [
+    './www/*.html',
+    './www/**/*.html',
+    './www/templates/*.vue',
+    './www/**/*.vue',
+  ],
   theme: {
     extend: {
       colors: {
@@ -9,6 +14,7 @@ module.exports = {
         blue: colors.blue,
         green: colors.emerald,
         short: "rgb(69, 159, 246)",
+        shortdarker: "rgb(48, 111, 171)",
         standard: "rgb(139, 93, 246)",
         extended: "rgb(246, 168, 35)",
         tutorial: "rgb(115, 128, 140)",
@@ -26,7 +32,7 @@ module.exports = {
         eidoverlay: '-20',
       },
       height: {
-        stretch: 'stretch',
+        'stretch': 'stretch',
         '1rem': '1rem',
         'half': '50%',
         'half-vh': '50vh',
@@ -39,6 +45,7 @@ module.exports = {
       maxHeight: {
         '6': '1.5rem',
         '9': '2.25rem',
+        '40': '10rem',
         '6/10': '60%',
         '80vw': '80vw',
         '60vh': '60vh',
